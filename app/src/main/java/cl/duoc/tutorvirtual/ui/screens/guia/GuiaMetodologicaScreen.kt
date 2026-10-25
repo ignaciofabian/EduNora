@@ -1,5 +1,5 @@
 
-package cl.duoc.tutorvirtual.ui.screens
+package cl.duoc.tutorvirtual.ui.screens.guia
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
