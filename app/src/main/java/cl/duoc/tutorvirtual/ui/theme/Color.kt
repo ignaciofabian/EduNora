@@ -2,10 +2,17 @@ package cl.duoc.tutorvirtual.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+// Tema claro
+val VerdeOscuro = Color(0xFF1B5E20)
+val VerdeClaro = Color(0xFFDAF5D5)
+val VerdeMuyOscuro = Color(0xFF123C18)
+val GrisVerde = Color(0xFF455A48)
+val Ocre = Color(0xFF795000)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+val Fondo = Color(0xFFFFFBF7)
+val TextoPrincipal = Color(0xFF1A1C19)
+
+// Tema oscuro
+val VerdeNeon = Color(0xFF8BD68E)
+val FondoOscuro = Color(0xFF121411)
+val TextoClaro = Color(0xFFE2E3DD)
