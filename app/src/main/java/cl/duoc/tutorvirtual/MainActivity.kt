@@ -12,11 +12,16 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import cl.duoc.tutorvirtual.ui.screens.guia.GuiaMetodologicaScreen
+import cl.duoc.tutorvirtual.ui.theme.TutorVirtualESUCARTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { MaterialTheme { TutorVirtualApp() } }
+        setContent {
+            TutorVirtualESUCARTheme {
+                TutorVirtualApp()
+            }
+        }
     }
 }
 
