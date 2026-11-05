@@ -51,8 +51,10 @@ fun CampoTexto(
     )
 }
 
-annotation class CampoForm {
-    val error: Any
-    val valor: Any
-    val esValido: Boolean
+/** Estado de un campo de formulario: su valor y el error de validación, si lo hay. */
+data class CampoForm(
+    val valor: String = "",
+    val error: String? = null
+) {
+    val esValido: Boolean get() = error == null && valor.isNotBlank()
 }

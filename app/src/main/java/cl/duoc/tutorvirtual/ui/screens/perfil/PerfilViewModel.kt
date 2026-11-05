@@ -3,7 +3,6 @@ package cl.duoc.tutorvirtual.ui.screens.perfil
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.room.util.copy
 import cl.duoc.tutorvirtual.data.model.Perfil
 import cl.duoc.tutorvirtual.data.preferences.PerfilRepository
 import cl.duoc.tutorvirtual.ui.components.CampoForm
@@ -56,7 +55,7 @@ class PerfilViewModel(app: Application) : AndroidViewModel(app) {
     fun onProfesor(v: String) =
         _ui.update { it.copy(profesorGuia = CampoForm(v, Validadores.nombre(v))) }
 
-    fun guardar(trim: Any.() -> String) {
+    fun guardar() {
         val s = _ui.value
         // Se valida todo de nuevo por si hay campos que el usuario nunca tocó
         val revisado = s.copy(
